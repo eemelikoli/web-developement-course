@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0 0 25em;
+}
+
+.column>h3 {
+    margin: 5px;
+}
+
+#on-map,
+#not-on-map {
+    min-height: 250px;
+    margin: 5px;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+}
+
+.hovered {
+    background-color: rgba(0, 0, 0, 0.2);
+}

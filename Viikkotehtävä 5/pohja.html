@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viikkotehtävä 5 - kartat ja drag &amp; drop</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.3/proj4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.js"></script>
+
+    <script src="http://appro.mit.jyu.fi/tiea2120/vt/vt1/2019/data.js"></script>
+    <script src="mmlLayers.js"></script>
+
+    <link rel="stylesheet" href="vt5.css">
+    <script src="vt5.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div id="teams" class="row">
+
+        <div class="column">
+            <h3>Kartalla</h3>
+            <ul id="on-map">
+
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Joukkueet</h3>
+            <ul id="not-on-map">
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

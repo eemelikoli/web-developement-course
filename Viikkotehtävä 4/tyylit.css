@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.palkki {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: -2;
+    animation: palkki-animaatio 6s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+#pollo {
+    z-index: 1;
+    display: inline;
+    position: absolute;
+    animation: pollo-animaatio 8s ease-in-out infinite;
+}
+
+#bunny {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#bunny-1,
+#bunny-2 {
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#bunny-1 {
+    bottom: 50%;
+    animation: bunny-1 2s linear infinite;
+}
+
+#bunny-2 {
+    top: 50%;
+    animation: bunny-2 2s linear infinite;
+}
+
+@keyframes bunny-1 {
+    0% {
+        bottom: 50%;
+    }
+    50% {
+        bottom: 100%;
+        transform: translate(-50%, 100%);
+    }
+    100% {
+        bottom: 50%;
+    }
+}
+
+@keyframes bunny-2 {
+    0% {
+        top: 50%;
+    }
+    50% {
+        top: 100%;
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes pollo-animaatio {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: calc(100% - 92px);
+        top: 0;
+    }
+    50% {
+        left: calc(100% - 92px);
+        top: calc(100% - 92px);
+    }
+    75% {
+        left: 0;
+        top: calc(100% - 92px);
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes palkki-animaatio {
+    0% {
+        top: -100px;
+    }
+    20% {
+        top: -100px;
+    }
+    80% {
+        top: 100%
+    }
+    100% {
+        top: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+label {
+    display: block;
+}
+
+
+/* Tyylit kentille jotka eivät läpäise validointia*/
+
+input:invalid {
+    border-color: #900;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+fieldset>div,
+fieldset>p {
+    max-width: 80%;
+}
+
+#nimi {
+    min-width: 50%;
+}
+
+#viesti {
+    background-color: rgba(166, 252, 82, 0.75);
+    color: darkgreen;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 360px) {
+    .foo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nimi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .valinnat label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .valinnat input {
+        float: right;
+    }
+}
